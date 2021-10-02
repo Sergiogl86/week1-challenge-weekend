@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url(/fuentes/SourceSansPro-Regular.ttf);
+  font-style: normal;
+}
 * {
   box-sizing: border-box;
 }
@@ -14,7 +19,7 @@ body {
   align-items: center;
   background-color: aquamarine;
   width: 600px;
-  height: 100vh;
+  /*Body height*/
   border: 1px solid black;
   /*Cambio general*/
   padding-left: 100px;
@@ -38,6 +43,60 @@ body {
 
 .header-container img {
   height: 55px;
+}
+
+.main-container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container__category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.main-container__category img {
+  width: 120px;
+  height: 140px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+
+.main-container__titulo {
+  font-family: "Source Sans Pro";
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px 40px 10px 40px;
+}
+
+.main-container__home {
+  display: flex;
+  flex-direction: column;
+}
+.main-container__images {
+  border: 1px solid black;
+  /*height: 170px;*/
+  margin: 5px;
+}
+.main-container__images img {
+  width: 100%;
+}
+.main-container__images:nth-child(3) {
+  overflow: hidden;
+}
+s .main-container__images:nth-child(3) img {
+  background-position: right;
+}
+.main-container__box {
+  position: relative;
+  background: white;
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */
