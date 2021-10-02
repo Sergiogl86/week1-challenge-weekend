@@ -214,11 +214,140 @@ body {
   background-color: white;
 }
 
+.footer {
+  width: 100%;
+  /*SIGUENOS-----------------*/
+  /*NEWSLETTER*/
+}
+.footer__contact {
+
 /*/ Envios y devoluciones/*/
 .footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.footer__contact-follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-bottom: 1px solid black;
+}
+.footer__contact-follow h3 {
+  font-size: 14px;
+}
+.footer__icons-box {
+  display: flex;
+  width: 212px;
+  height: 40px;
+  padding-bottom: 80px;
+}
+.footer__iconos {
+  background-image: url(/sprite.svg);
+  width: 212px;
+  height: 40px;
+  background-position: 0px -490px;
+}
+.footer__contact-newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+  padding-bottom: 50px;
+}
+.footer__email {
+  margin-top: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+.footer__email input[type=email] {
+  margin-top: 5px;
+  width: 330px;
+  height: 40px;
+  border: 1px solid black;
+}
+.footer__check {
+  display: flex;
+  align-items: center;
+}
+.footer__check input[type=checkbox] {
+  background: white;
+  width: 17px;
+  height: 17px;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #555;
+  margin-right: 10px;
+}
+.footer__check a {
+  color: black;
+}
+.footer__button-box {
+  margin-top: 1px;
+}
+.footer__button-box button {
+  background: #ff5959;
+  font-size: 14px;
+  font-family: "Source Sans Pro Black";
+  color: white;
+  padding: 10px 120px 10px 120px;
+  border: none;
+}
+.footer__button-box button:hover {
+  background: #b32525ef;
+}
+.footer__contact-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.footer__contact-box {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: #ff5959;
+  align-items: center;
+}
+.footer__contact-box h3 {
+  margin-top: 0px;
+}
+.footer__icon-contact {
+  width: 40px;
+  height: 40px;
+  background-image: url(/sprite.svg);
+  background-position: 4px -204px;
+}
+.footer__icon-nosotros {
+  width: 40px;
+  height: 40px;
+  background-image: url(/sprite.svg);
+  background-position: 4px -242px;
+}
+.footer__icon-conditions {
+  width: 40px;
+  height: 40px;
+  background-image: url(/sprite.svg);
+  background-position: 4px -281px;
+}
+.footer__copy {
+  background: #ff5959;
+  width: 100%;
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .size-footer__icons {
@@ -349,5 +478,6 @@ body {
 }
 
 /*/ Warrada /*/
+
 
 /*# sourceMappingURL=style.css.map */
