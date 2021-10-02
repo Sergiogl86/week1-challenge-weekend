@@ -3,11 +3,6 @@
   src: url(/fuentes/SourceSansPro-Regular.ttf);
   font-style: normal;
 }
-@font-face {
-  font-family: "Source Sans Pro Black";
-  src: url(/fuentes/SourceSansPro-Black.ttf);
-  font-style: normal;
-}
 * {
   box-sizing: border-box;
 }
@@ -16,7 +11,6 @@ body {
   display: flex;
   justify-content: center;
   margin: 0;
-  font-family: "Source Sans Pro";
 }
 
 .body {
@@ -59,13 +53,13 @@ body {
 .header-fix__user {
   display: flex;
 }
-.header-fix__user:hover {
-  background-position-x: -37px;
-}
 .header-fix__user-icon {
   width: 27px;
   height: 27px;
   background-image: url(./sprite.svg);
+}
+.header-fix__user-icon:hover {
+  background-position-x: -37px;
 }
 .header-fix__buscar {
   background-color: #bbb8b6;
@@ -79,9 +73,6 @@ body {
 .header-fix__carrito {
   background-color: #ffffff;
 }
-.header-fix__carrito:hover {
-  background-color: #ff5959;
-}
 .header-fix__carrito-icon {
   width: 30px;
   height: 30px;
@@ -92,21 +83,14 @@ body {
   background-color: #ff5959;
 }
 .header-fix__Numitems {
-  font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
+  font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial",
+    sans-serif;
   font-style: normal;
   font-size: 20px;
   color: #fff;
 }
 
-/*/Hovers/*/
-.header-fix__carrito:hover .header-fix__carrito-icon {
-  background-position-x: -116px;
-}
-
-.header-fix__user:hover .header-fix__user-icon {
-  background-position-x: -37px;
-}
-
+/*IMAGEN*/
 .header-container {
   display: flex;
   justify-content: flex-start;
@@ -123,9 +107,6 @@ body {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-  font-family: "Source Sans Pro Black";
-  font-size: 17px;
-  /*font-weight: bold;*/
 }
 
 .main-container__category {
@@ -146,56 +127,34 @@ body {
 .main-container__titulo {
   font-family: "Source Sans Pro";
   letter-spacing: 5px;
+  font-weight: bold;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: 10px 40px 10px 40px;
 }
 
-.main-container {
-  width: 100%;
-}
 .main-container__home {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
 }
 .main-container__images {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  border: 1px solid black;
+  /*height: 170px;*/
+  margin: 5px;
+}
+.main-container__images img {
   width: 100%;
-  height: 150px;
-  margin-bottom: 10px;
-}
-.main-container__images:nth-child(1) {
-  background-image: url(/images/fiestastematicas.jpg);
-  background-size: cover;
-}
-.main-container__images:nth-child(2) {
-  background-image: url(/images/fiestaspersonajes.jpg);
-  background-size: cover;
 }
 .main-container__images:nth-child(3) {
-  background-image: url(/images/pompones.jpg);
-  background-size: cover;
   overflow: hidden;
 }
+s .main-container__images:nth-child(3) img {
+  background-position: right;
+}
 .main-container__box {
-  width: 50%;
-  padding: 0px 20px 0px 20px;
+  position: relative;
   background: white;
-  opacity: 0.7;
-  line-height: 20px;
-}
-.main-container__box h3:hover {
-  text-decoration: underline;
-}
-.main-container__view-more {
-  background-color: #ff5959;
-  box-sizing: border-box;
-}
-.main-container__view-more a {
-  color: white;
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */
