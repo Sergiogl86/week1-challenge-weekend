@@ -93,7 +93,8 @@ body {
     background-color: #ff5959;
   }
   &__Numitems {
-    font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
+    font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial",
+      sans-serif;
     font-style: normal;
     font-size: 20px;
     color: #fff;
@@ -216,3 +217,141 @@ body {
   height: 100px;
   background-color: white;
 }
+
+/*/ Envios y devoluciones/*/
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.size-footer__icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  width: 160px;
+}
+
+.size-footer__iconsbox {
+  height: 70px;
+  width: 90px;
+}
+
+.footer__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding-top: 30px;
+  background-color: #e8e6e5;
+  &__enviosBox {
+    background-image: url(./sprite.svg);
+    height: 70px;
+    width: 90px;
+    background-position-x: 5px;
+    background-position-y: -30px;
+  }
+  &__envios24Box {
+    background-image: url(./sprite.svg);
+    height: 70px;
+    width: 60px;
+    background-position-x: -87px;
+    background-position-y: -30px;
+  }
+  &__devolucionesBox {
+    background-image: url(./sprite.svg);
+    height: 70px;
+    width: 80px;
+    background-position-x: -143px;
+    background-position-y: -30px;
+  }
+  &__reembolsoBox {
+    background-image: url(./sprite.svg);
+    height: 70px;
+    width: 90px;
+    background-position-x: -218px;
+    background-position-y: -30px;
+  }
+  &__text1 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #67625f;
+    &:hover {
+      color: #fd8080;
+    }
+  }
+  &__text2 {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #67625f;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    &:hover {
+      color: #fd8080;
+    }
+  }
+}
+
+/*/ Hover completo iconos /*/
+
+.footer__icons__envios:hover .footer__icons__enviosBox {
+  background-position-x: 5px;
+  background-position-y: -101px;
+}
+
+.footer__icons__envios:hover .footer__icons__text1 {
+  color: #fd8080;
+}
+
+.footer__icons__envios:hover .footer__icons__text2 {
+  color: #fd8080;
+}
+
+.footer__icons__envios24:hover .footer__icons__envios24Box {
+  background-position-x: -87px;
+  background-position-y: -101px;
+}
+
+.footer__icons__envios24:hover .footer__icons__text1 {
+  color: #fd8080;
+}
+
+.footer__icons__envios24:hover .footer__icons__text2 {
+  color: #fd8080;
+}
+
+.footer__icons__devoluciones:hover .footer__icons__devolucionesBox {
+  background-position-x: -143px;
+  background-position-y: -101px;
+}
+
+.footer__icons__devoluciones:hover .footer__icons__text1 {
+  color: #fd8080;
+}
+
+.footer__icons__devoluciones:hover .footer__icons__text2 {
+  color: #fd8080;
+}
+
+.footer__icons__reembolso:hover .footer__icons__reembolsoBox {
+  background-position-x: -218px;
+  background-position-y: -101px;
+}
+
+.footer__icons__reembolso:hover .footer__icons__text1 {
+  color: #fd8080;
+}
+
+.footer__icons__reembolso:hover .footer__icons__text2 {
+  color: #fd8080;
+}
+
+/*/ Warrada /*/
