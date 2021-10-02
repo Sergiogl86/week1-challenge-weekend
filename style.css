@@ -26,10 +26,69 @@ body {
   padding-right: 100px;
 }
 
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
 .header-fix {
   display: flex;
+  justify-content: space-around;
+  position: sticky;
+  width: 100%;
+  height: 50px;
+  background-color: #f8f8f8;
   width: 100%;
   background-color: brown;
+}
+.header-fix__menu {
+  background-image: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/burger_menu.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header-fix__menu:hover {
+  background-color: blue;
+}
+.header-fix__user {
+  display: flex;
+}
+.header-fix__user:hover {
+  background-color: blue;
+}
+.header-fix__user-icon {
+  width: 27px;
+  height: 27px;
+  background-image: url(./sprite.svg);
+}
+.header-fix__buscar {
+  background-color: #bbb8b6;
+}
+.header-fix__buscar-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url(./sprite.svg);
+  background-position-x: -312px;
+}
+.header-fix__carrito {
+  background-color: #ffffff;
+}
+.header-fix__carrito-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url(./sprite.svg);
+  background-position-x: -76px;
+}
+.header-fix__items {
+  background-color: #ff5959;
+}
+.header-fix__Numitems {
+  font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  color: #fff;
 }
 
 /*IMAGEN*/
