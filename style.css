@@ -31,12 +31,13 @@ body {
 
 .header-fix {
   display: flex;
-
   justify-content: space-around;
   position: sticky;
   width: 100%;
   height: 50px;
   background-color: #f8f8f8;
+  width: 100%;
+  background-color: brown;
 }
 .header-fix__menu {
   background-image: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/burger_menu.png);
@@ -83,9 +84,6 @@ body {
   font-style: normal;
   font-size: 20px;
   color: #fff;
-
-  width: 100%;
-  background-color: brown;
 }
 
 /*IMAGEN*/
@@ -99,7 +97,6 @@ body {
 
 .header-container img {
   height: 55px;
-
 }
 
 /*# sourceMappingURL=style.css.map */
