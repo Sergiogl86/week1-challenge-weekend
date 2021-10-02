@@ -1,8 +1,12 @@
 @font-face {
-    font-family: "Source Sans Pro";
-    src: url(/fuentes/SourceSansPro-Regular.ttf);
-    
-    font-style: normal;
+  font-family: "Source Sans Pro";
+  src: url(/fuentes/SourceSansPro-Regular.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans Pro Black";
+  src: url(/fuentes/SourceSansPro-Black.ttf);
+  font-style: normal;
 }
 
 * {
@@ -13,6 +17,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 0;
+  font-family: "Source Sans Pro";
 }
 
 .body {
@@ -86,8 +91,7 @@ body {
     background-color: #ff5959;
   }
   &__Numitems {
-    font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial",
-      sans-serif;
+    font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
     font-style: normal;
     font-size: 20px;
     color: #fff;
@@ -97,7 +101,7 @@ body {
   background-color: brown;
 }
 
-/*IMAGEN*/
+/*IMAGEN----------------------------------------*/
 .header-container {
   display: flex;
   justify-content: flex-start;
@@ -111,18 +115,21 @@ body {
 }
 
 //MAIN CONTAINER
-.main-container{
+.main-container {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
+  font-family: "Source Sans Pro Black";
+  font-size: 17px;
+  /*font-weight: bold;*/
 }
-.main-container__category{
+.main-container__category {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
 }
-.main-container__category img{
+.main-container__category img {
   width: 120px;
   height: 140px;
   margin-top: 100px;
@@ -130,37 +137,59 @@ body {
   border: 1px solid black;
 }
 
-.main-container__titulo{
+.main-container__titulo {
   font-family: "Source Sans Pro";
   letter-spacing: 5px;
-  font-weight: bold;
+
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: 10px 40px 10px 40px;
 }
 
-.main-container{
-  &__home{
+.main-container {
+  width: 100%;
+  &__home {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
   }
-  &__images{
-  border: 1px solid black;
-  /*height: 170px;*/
-  margin: 5px;
-  & img{
+  &__images {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 100%;
-  }
-  &:nth-child(3){
-    overflow: hidden;s
-    & img{
-      background-position: right;
+    height: 150px;
+    margin-bottom: 10px;
+    &:nth-child(1) {
+      background-image: url(/images/fiestastematicas.jpg);
+      background-size: cover;
+    }
+    &:nth-child(2) {
+      background-image: url(/images/fiestaspersonajes.jpg);
+      background-size: cover;
+    }
+    &:nth-child(3) {
+      background-image: url(/images/pompones.jpg);
+      background-size: cover;
+      overflow: hidden;
     }
   }
-}
-  &__box{
-  position: relative;
-  background: white;
-  border: 1px solid black;
-}
+  &__box {
+    width: 50%;
+    padding: 0px 20px 0px 20px;
+    background: white;
+    opacity: 0.7;
+    line-height: 20px;
+
+    & h3:hover {
+      text-decoration: underline;
+    }
+  }
+  &__view-more {
+    background-color: #ff5959;
+    box-sizing: border-box;
+    & a {
+      color: white;
+    }
+  }
 }
