@@ -93,7 +93,8 @@ body {
     background-color: #ff5959;
   }
   &__Numitems {
-    font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
+    font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial",
+      sans-serif;
     font-style: normal;
     font-size: 20px;
     color: #fff;
@@ -198,23 +199,5 @@ body {
     & a {
       color: white;
     }
-  }
-    border: 1px solid black;
-    /*height: 170px;*/
-    margin: 5px;
-    & img {
-      width: 100%;
-    }
-    &:nth-child(3) {
-      overflow: hidden;
-      s & img {
-        background-position: right;
-      }
-    }
-  }
-  &__box {
-    position: relative;
-    background: white;
-    border: 1px solid black;
   }
 }
