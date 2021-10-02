@@ -16,6 +16,7 @@ body {
   width: 600px;
   height: 100vh;
   border: 1px solid black;
+  /*Cambio general*/
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -30,6 +31,7 @@ body {
 
 .header-fix {
   display: flex;
+
   justify-content: space-around;
   position: sticky;
   width: 100%;
@@ -81,6 +83,23 @@ body {
   font-style: normal;
   font-size: 20px;
   color: #fff;
+
+  width: 100%;
+  background-color: brown;
+}
+
+/*IMAGEN*/
+.header-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  border: 1px solid black;
+  background: blue;
+}
+
+.header-container img {
+  height: 55px;
+
 }
 
 /*# sourceMappingURL=style.css.map */
