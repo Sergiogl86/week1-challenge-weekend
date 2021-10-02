@@ -220,14 +220,10 @@ body {
   /*NEWSLETTER*/
 }
 .footer__contact {
-
-/*/ Envios y devoluciones/*/
-.footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .footer__contact-follow {
   display: flex;
   flex-direction: column;
@@ -348,6 +344,13 @@ body {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+/*/ Envios y devoluciones/*/
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .size-footer__icons {
@@ -478,6 +481,5 @@ body {
 }
 
 /*/ Warrada /*/
-
 
 /*# sourceMappingURL=style.css.map */
