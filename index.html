@@ -1,78 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week1-challenge-weekend</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>week1-challenge-weekend</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-</head>
+  <body>
+    <div class="body">
+      <header class="header-fix">
+        <div class="header-fix__menu box"></div>
+        <div class="box"></div>
+        <div class="header-fix__user box">
+          <i class="header-fix__user-icon"></i>
+        </div>
+        <div class="box"></div>
+        <div class="header-fix__buscar box">
+          <i class="header-fix__buscar-icon"></i>
+        </div>
+        <div class="header-fix__carrito box">
+          <i class="header-fix__carrito-icon"></i>
+        </div>
+        <div class="header-fix__items box">
+          <i class="header-fix__Numitems">0</i>
+        </div>
+      </header>
+      <div class="header-container">
+        <img
+          src="https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/logo-small.svg"
+          alt="Logo Maria Unarillos"
+        />
+      </div>
+      <main class="main-container">
+        <div class="main-container__category">
+          <img src="/images/tarta-cumpleanos.png" alt="tara de cumpleaños" />
+          <h2 class="main-container__titulo">FIESTAS</h2>
+        </div>
 
-<body>
-  <div class="body">
-    <header class="header-fix">
-      <div class="header-fix__menu box"></div>
-      <div class="box"></div>
-      <div class="header-fix__user box">
-        <i class="header-fix__user-icon"></i>
-      </div>
-      <div class="box"></div>
-      <div class="header-fix__buscar box">
-        <i class="header-fix__buscar-icon"></i>
-      </div>
-      <div class="header-fix__carrito box">
-        <i class="header-fix__carrito-icon"></i>
-      </div>
-      <div class="header-fix__items box">
-        <i class="header-fix__Numitems">0</i>
-      </div>
-    </header>
-    <div class="header-container">
-      <img src="https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/logo-small.svg"
-        alt="Logo Maria Unarillos" />
-    </div>
-    <main class="main-container">
+        <div class="main-container__home">
+          <div class="main-container__images">
+            <!--<img src="/images/fiestastematicas.jpg" alt="fiestas tematicas">-->
+            <div class="main-container__box">
+              <h3>FIESTAS TEMÁTICAS</h3>
+            </div>
+          </div>
+          <div class="main-container__images">
+            <!--<img src="/images/fiestaspersonajes.jpg" alt="fiestas personajes">-->
+            <div class="main-container__box">
+              <h3>FIESTAS PERSONAJES</h3>
+            </div>
+          </div>
+          <div class="main-container__images">
+            <!--<img src="/images/pompones.jpg" alt="pompones">-->
+            <div class="main-container__box">
+              <h3>ACCESORIOS PARA FIESTAS</h3>
+            </div>
+          </div>
 
-      <div class="main-container__category">
-        <img src="/images/tarta-cumpleanos.png" alt="tara de cumpleaños">
-        <h2 class="main-container__titulo">FIESTAS</h2>
-      </div>
-
-      <div class="main-container__home">
-        <div class="main-container__images">
-          <!--<img src="/images/fiestastematicas.jpg" alt="fiestas tematicas">-->
-          <div class="main-container__box">
-            <h3>FIESTAS TEMÁTICAS</h3>
+          <div class="main-container__view-more">
+            <a href="#">VER MÁS</a>
           </div>
         </div>
-        <div class="main-container__images">
-          <!--<img src="/images/fiestaspersonajes.jpg" alt="fiestas personajes">-->
-          <div class="main-container__box">
-            <h3>FIESTAS PERSONAJES</h3>
-          </div>
-        </div>
-        <div class="main-container__images">
-          <!--<img src="/images/pompones.jpg" alt="pompones">-->
-          <div class="main-container__box">
-            <h3>ACCESORIOS PARA FIESTAS</h3>
-          </div>
-        </div>
-
-        <div class="main-container__view-more">
-          <a href="#">VER MÁS</a>
-        </div>
-
-      </div>
-    </main>
-    <div class="sponsors">
-
-    </div>
+      </main>
+      <div class="sponsors"></div>
+      
 
     <footer class="footer">
       <section class="footer__container">
-        <div class="footer__icons"></div>
+        <div class="footer__icons">
+          <div class="footer__icons__envios size-footer__icons">
+              <div class="footer__icons__enviosBox"></div>
+              <h2 class="footer__icons__text1">ENVÍO GRATIS</h2>
+              <p class="footer__icons__text2">PEDIDOS SUPERIORES A 49€</p>
+            </div>
+            <div
+              class="
+                footer__icons__Box footer__icons__envios24
+                size-footer__icons
+              "
+            >
+              <div class="footer__icons__envios24Box"></div>
+              <h2 class="footer__icons__text1">ENVÍO 24-48 HORAS</h2>
+              <p class="footer__icons__text2">
+                HAZ TU PEDIDO ANTES DE LAS 18:00H
+              </p>
+            </div>
+            <div
+              class="
+                footer__icons__Box footer__icons__devoluciones
+                size-footer__icons
+              "
+            >
+              <div class="footer__icons__devolucionesBox"></div>
+              <h2 class="footer__icons__text1">DEVOLUCIONES</h2>
+              <p class="footer__icons__text2">
+                30 DÍAS PARA DEVOLVER TU COMPRA
+              </p>
+            </div>
+            <div
+              class="
+                footer__icons__Box footer__icons__reembolso
+                size-footer__icons
+              "
+            >
+              <div class="footer__icons__reembolsoBox"></div>
+              <h2 class="footer__icons__text1">CONTRA REEMBOLSO</h2>
+              <p class="footer__icons__text2">SIN COMISIÓN</p>
+            </div>
+          </div>
         <div class="footer__contact">
 
           <div class="footer__contact-follow">

@@ -220,10 +220,14 @@ body {
   /*NEWSLETTER*/
 }
 .footer__contact {
+
+/*/ Envios y devoluciones/*/
+.footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .footer__contact-follow {
   display: flex;
   flex-direction: column;
@@ -345,5 +349,135 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+.size-footer__icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  width: 160px;
+}
+
+.size-footer__iconsbox {
+  height: 70px;
+  width: 90px;
+}
+
+.footer__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding-top: 30px;
+  background-color: #e8e6e5;
+}
+.footer__icons__enviosBox {
+  background-image: url(./sprite.svg);
+  height: 70px;
+  width: 90px;
+  background-position-x: 5px;
+  background-position-y: -30px;
+}
+.footer__icons__envios24Box {
+  background-image: url(./sprite.svg);
+  height: 70px;
+  width: 60px;
+  background-position-x: -87px;
+  background-position-y: -30px;
+}
+.footer__icons__devolucionesBox {
+  background-image: url(./sprite.svg);
+  height: 70px;
+  width: 80px;
+  background-position-x: -143px;
+  background-position-y: -30px;
+}
+.footer__icons__reembolsoBox {
+  background-image: url(./sprite.svg);
+  height: 70px;
+  width: 90px;
+  background-position-x: -218px;
+  background-position-y: -30px;
+}
+.footer__icons__text1 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #67625f;
+}
+.footer__icons__text1:hover {
+  color: #fd8080;
+}
+.footer__icons__text2 {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  color: #67625f;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+}
+.footer__icons__text2:hover {
+  color: #fd8080;
+}
+
+/*/ Hover completo iconos /*/
+.footer__icons__envios:hover .footer__icons__enviosBox {
+  background-position-x: 5px;
+  background-position-y: -101px;
+}
+
+.footer__icons__envios:hover .footer__icons__text1 {
+  color: #fd8080;
+}
+
+.footer__icons__envios:hover .footer__icons__text2 {
+  color: #fd8080;
+}
+
+.footer__icons__envios24:hover .footer__icons__envios24Box {
+  background-position-x: -87px;
+  background-position-y: -101px;
+}
+
+.footer__icons__envios24:hover .footer__icons__text1 {
+  color: #fd8080;
+}
+
+.footer__icons__envios24:hover .footer__icons__text2 {
+  color: #fd8080;
+}
+
+.footer__icons__devoluciones:hover .footer__icons__devolucionesBox {
+  background-position-x: -143px;
+  background-position-y: -101px;
+}
+
+.footer__icons__devoluciones:hover .footer__icons__text1 {
+  color: #fd8080;
+}
+
+.footer__icons__devoluciones:hover .footer__icons__text2 {
+  color: #fd8080;
+}
+
+.footer__icons__reembolso:hover .footer__icons__reembolsoBox {
+  background-position-x: -218px;
+  background-position-y: -101px;
+}
+
+.footer__icons__reembolso:hover .footer__icons__text1 {
+  color: #fd8080;
+}
+
+.footer__icons__reembolso:hover .footer__icons__text2 {
+  color: #fd8080;
+}
+
+/*/ Warrada /*/
+
 
 /*# sourceMappingURL=style.css.map */
