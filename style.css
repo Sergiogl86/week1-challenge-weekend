@@ -42,27 +42,25 @@ body {
 
 .header-fix {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  width: 100%;
   position: sticky;
+  top: 0px;
+  z-index: 2;
   width: 100%;
   height: 50px;
   background-color: #f8f8f8;
-  width: 100%;
-  background-color: brown;
 }
 .header-fix__menu {
   background-image: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/burger_menu.png);
   background-position: center;
   background-repeat: no-repeat;
 }
-.header-fix__menu:hover {
-  background-color: blue;
-}
 .header-fix__user {
   display: flex;
 }
 .header-fix__user:hover {
-  background-color: blue;
+  background-position-x: -37px;
 }
 .header-fix__user-icon {
   width: 27px;
@@ -81,6 +79,9 @@ body {
 .header-fix__carrito {
   background-color: #ffffff;
 }
+.header-fix__carrito:hover {
+  background-color: #ff5959;
+}
 .header-fix__carrito-icon {
   width: 30px;
   height: 30px;
@@ -97,7 +98,15 @@ body {
   color: #fff;
 }
 
-/*IMAGEN----------------------------------------*/
+/*/Hovers/*/
+.header-fix__carrito:hover .header-fix__carrito-icon {
+  background-position-x: -116px;
+}
+
+.header-fix__user:hover .header-fix__user-icon {
+  background-position-x: -37px;
+}
+
 .header-container {
   display: flex;
   justify-content: flex-start;
