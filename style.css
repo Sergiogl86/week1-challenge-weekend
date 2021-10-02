@@ -159,6 +159,7 @@ body {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .main-container__images {
   display: flex;
@@ -192,11 +193,25 @@ body {
   text-decoration: underline;
 }
 .main-container__view-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #ff5959;
-  box-sizing: border-box;
+  margin-top: 30px;
+  width: 120px;
+  height: 50px;
 }
 .main-container__view-more a {
+  font-family: "Source Sans Pro";
+  text-decoration: none;
+  padding: 20px;
   color: white;
+}
+
+.sponsors {
+  width: 100%;
+  height: 100px;
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
