@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #f8f8f8;
-  width: 600px;
+  width: 100vw;
   /*Body height*/
   /*Cambio general*/
   /*padding-left: 100px;
@@ -50,6 +50,42 @@ body {
   height: 50px;
   background-color: #f8f8f8;
 }
+.header-fix__menu-desplegable {
+  display: none;
+  width: 232px;
+  justify-content: space-between;
+  display: none;
+}
+.header-fix__ma {
+  width: 80px;
+  height: 140px;
+  background-image: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/icons/maria-lunarillos.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #ff5959;
+}
+.header-fix__cu {
+  width: 70px;
+  height: 70px;
+  background-image: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/icons/cucute.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #6199af;
+}
+.header-fix__cu:hover {
+  height: 140px;
+}
+.header-fix__mu {
+  width: 70px;
+  height: 70px;
+  background-image: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/icons/mumuchu.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #f6b436;
+}
+.header-fix__mu:hover {
+  height: 140px;
+}
 .header-fix__menu {
   background-image: url(https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/burger_menu.png);
   background-position: center;
@@ -57,14 +93,29 @@ body {
 }
 .header-fix__user {
   display: flex;
-}
-.header-fix__user:hover {
-  background-position-x: -37px;
+  width: 160px;
 }
 .header-fix__user-icon {
   width: 27px;
   height: 27px;
   background-image: url(./sprite.svg);
+}
+.header-fix__u-icon-text {
+  display: none;
+  float: left;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+}
+.header-fix__social {
+  display: none;
+  width: 215px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.header-fix__social-icon {
+  background: url("./sprite.svg") no-repeat 0 -533px;
+  width: 210px;
+  height: 33px;
 }
 .header-fix__buscar {
   background-color: #bbb8b6;
@@ -97,13 +148,51 @@ body {
   color: #fff;
 }
 
-/*/Hovers/*/
+/*/ MEDIA QUERIES HEADER /*/
+@media (min-width: 601px) {
+  .header-fix {
+    width: 60%;
+  }
+
+  .header-fix__menu-desplegable {
+    display: flex;
+  }
+
+  .header-fix__menu {
+    display: none;
+  }
+
+  .header-fix__expandir {
+    flex-grow: 1;
+  }
+
+  .header-fix__u-icon-text {
+    display: block;
+  }
+
+  .header-fix__buscar {
+    display: none;
+  }
+
+  .header-fix__social {
+    display: flex;
+  }
+}
+/*/Hovers HEADER/*/
 .header-fix__carrito:hover .header-fix__carrito-icon {
   background-position-x: -116px;
 }
 
 .header-fix__user:hover .header-fix__user-icon {
   background-position-x: -37px;
+}
+
+.header-fix__user:hover .header-fix__user-icon {
+  background-position-x: -37px;
+}
+
+.header-fix__user:hover .header-fix__u-icon-text {
+  color: #ff5959;
 }
 
 /*IMAGEN----------------------------------------*/
