@@ -284,7 +284,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: yellow;
   height: 200px;
   width: 445px;
 }
@@ -292,24 +291,41 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: green;
   height: 50px;
   width: 445px;
 }
 .header-container__lateral_bus_boton1 {
-  height: 30px;
+  height: 50px;
   width: 130px;
-  border-style: dotted;
+  background-image: url("./novedades.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .header-container__lateral_bus_boton2 {
-  height: 30px;
+  height: 50px;
   width: 130px;
-  border-style: dotted;
+  background-image: url("./ofertas.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header-container__lateral_bus_box {
+  display: flex;
+  align-items: center;
+  background-color: #bbb8b6;
+}
+.header-container__lateral_b_b {
+  width: 125px;
+  height: 30px;
+}
+.header-container__lateral_bus_box_i {
+  background: url("./sprite.svg") no-repeat -307px 0px;
+  width: 45px;
+  height: 25px;
+  background-color: #bbb8b6;
 }
 .header-container__lateral_bus_box {
   height: 30px;
   width: 175px;
-  border-style: dotted;
 }
 .header-container__lateral_iconos {
   display: flex;
