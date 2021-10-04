@@ -410,6 +410,7 @@ body {
   &__contact-follow {
     display: flex;
     flex-direction: column;
+    color: #67625f;
     align-items: center;
     margin-top: 50px;
     padding-left: 60px;
@@ -421,16 +422,37 @@ body {
   }
   &__icons-box {
     display: flex;
+    justify-content: center;
     width: 212px;
     height: 40px;
     padding-bottom: 80px;
   }
-  &__iconos {
-    background-image: url(/sprite.svg);
-    width: 212px;
-    height: 40px;
-    background-position: 0px -490px;
+  &__iconos-facebook {
+    background: url(/sprite.svg) no-repeat 0 -493px;
+    width: 32px;
+    height: 33px;
   }
+  &__iconos-twitter {
+    background: url(/sprite.svg) no-repeat -35px -493px;
+    width: 33px;
+    height: 33px;
+  }
+  &__iconos-instagram {
+    background: url(/sprite.svg) no-repeat -71px -493px;
+    width: 32px;
+    height: 33px;
+  }
+  &__iconos-pinterest {
+    background: url(/sprite.svg) no-repeat -106px -493px;
+    width: 33px;
+    height: 33px;
+  }
+  &__iconos-youtube {
+    background: url(/sprite.svg) no-repeat -177px -493px;
+    width: 33px;
+    height: 33px;
+  }
+
   /*NEWSLETTER*/
   &__contact-newsletter {
     display: flex;
@@ -478,7 +500,8 @@ body {
     & button {
       background: #ff5959;
       font-size: 14px;
-      font-family: "Source Sans Pro Black";
+      font-family: "Source Sans Pro";
+      font-weight: bold;
       color: white;
       padding: 10px 120px 10px 120px;
       border: none;
@@ -526,6 +549,8 @@ body {
   }
 
   &__copy {
+    font-style: "Source Sans Pro";
+    font-weight: bold;
     background: #ff5959;
     width: 100%;
     color: white;
@@ -688,9 +713,79 @@ body {
 /*/ Warrada /*/
 
 @media (min-width: 800px) {
-  .footer__contact {
-    display: flex;
-    flex-direction: row;
+  .footer {
+    &__contact {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding-bottom: 80px;
+      width: 65%;
+    }
+    &__contact-follow {
+      border-bottom: 0;
+      border-right: 1px solid #a59e9aab;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-left: 0;
+      padding-right: 10px;
+      margin-top: 20px;
+      padding-top: 30px;
+      & h3 {
+        margin-top: 0;
+      }
+    }
+    &__contact-newsletter {
+      flex-direction: row;
+      align-items: center;
+      border-bottom: 0;
+      margin-top: 20px;
+      padding-top: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 20px;
+      border-right: 1px solid #a59e9aab;
+    }
+    &__email {
+      margin-top: 1px;
+      & input[type="email"] {
+        margin-top: 14px;
+        width: 300px;
+        height: 37px;
+        border: 1px solid #67625f;
+      }
+    }
+    &__button-box {
+      padding-top: 11px;
+      margin: 0;
+      min-width: 105px;
+      & button {
+        background: #ff5959;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-left: 4px;
+        &:hover {
+          background: #b32525ef;
+        }
+      }
+    }
+    &__contact-contact {
+      margin-top: 40px;
+      margin-bottom: 0;
+      padding-left: 40px;
+      align-items: flex-start;
+    }
+    &__contact-box {
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 11px;
+    }
+    &__icons-box {
+      justify-content: flex-start;
+    }
+  }
+  .footer__email {
     align-items: flex-start;
   }
 }
