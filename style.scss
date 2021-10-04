@@ -203,8 +203,7 @@ body {
     background-color: #ff5959;
   }
   &__Numitems {
-    font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial",
-      sans-serif;
+    font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
     font-style: normal;
     font-size: 20px;
     color: #fff;
@@ -431,28 +430,57 @@ body {
     background: url(/sprite.svg) no-repeat 0 -493px;
     width: 32px;
     height: 33px;
+    &:hover {
+      cursor: pointer;
+      background: url(sprite.svg) no-repeat 0 -573px;
+      width: 32px;
+      height: 33px;
+    }
   }
   &__iconos-twitter {
     background: url(/sprite.svg) no-repeat -35px -493px;
     width: 33px;
     height: 33px;
+    &:hover {
+      cursor: pointer;
+      background: url(/sprite.svg) no-repeat -35px -573px;
+      width: 33px;
+      height: 33px;
+    }
   }
   &__iconos-instagram {
     background: url(/sprite.svg) no-repeat -71px -493px;
-    width: 32px;
+    width: 33px;
     height: 33px;
+    &:hover {
+      cursor: pointer;
+      background: url(/sprite.svg) no-repeat -71px -573px;
+      width: 32px;
+      height: 33px;
+    }
   }
   &__iconos-pinterest {
     background: url(/sprite.svg) no-repeat -106px -493px;
     width: 33px;
     height: 33px;
+    &:hover {
+      cursor: pointer;
+      background: url(sprite.svg) no-repeat -106px -573px;
+      width: 33px;
+      height: 33px;
+    }
   }
   &__iconos-youtube {
     background: url(/sprite.svg) no-repeat -177px -493px;
     width: 33px;
     height: 33px;
+    &:hover {
+      cursor: pointer;
+      background: url(/sprite.svg) no-repeat -177px -573px;
+      width: 33px;
+      height: 33px;
+    }
   }
-
   /*NEWSLETTER*/
   &__contact-newsletter {
     display: flex;
@@ -490,6 +518,7 @@ body {
       border-radius: 5px;
       border: 2px solid #555;
       margin-right: 10px;
+      margin-top: 4px;
     }
     & a {
       color: #67625f;
@@ -527,6 +556,10 @@ body {
 
     & h3 {
       margin-top: 0px;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
     }
   }
   &__icon-contact {
@@ -714,9 +747,13 @@ body {
 
 @media (min-width: 800px) {
   .footer {
+    &__container {
+      width: 100%;
+    }
     &__contact {
       display: flex;
       flex-direction: row;
+      justify-content: center;
       align-items: flex-start;
       padding-bottom: 80px;
       width: 65%;
@@ -757,7 +794,7 @@ body {
     &__button-box {
       padding-top: 11px;
       margin: 0;
-      min-width: 105px;
+      min-width: 115px;
       & button {
         background: #ff5959;
         padding-top: 10px;
@@ -784,9 +821,23 @@ body {
     &__icons-box {
       justify-content: flex-start;
     }
+    &__contact-box h3 {
+      margin-top: 10px;
+      margin-left: 5px;
+      font-size: 14px;
+    }
   }
   .footer__email {
     align-items: flex-start;
-    background-color: white;
+  }
+}
+
+@media (min-width: 800px) {
+  .footer__icons {
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 25%;
+    padding-right: 25%;
+    height: 200px;
   }
 }
