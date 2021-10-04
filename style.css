@@ -708,6 +708,7 @@ body {
 
   .footer__email {
     align-items: flex-start;
+    background-color: white;
   }
 }
 
