@@ -294,7 +294,7 @@ body {
   justify-content: space-between;
   background-color: green;
   height: 50px;
-  width: 425px;
+  width: 445px;
 }
 .header-container__lateral_bus_boton1 {
   height: 30px;
@@ -313,38 +313,85 @@ body {
 }
 .header-container__lateral_iconos {
   display: flex;
-  background-color: blue;
-  height: 120px;
-  width: 425px;
+  height: 130px;
+  width: 445px;
 }
 .header-container__lateral_i_utensilios {
-  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-container__lateral_i_utensilios_i {
+  height: 85px;
   width: 80px;
-  border-style: dotted;
+  background-image: url(./utensiliosML.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .header-container__lateral_i_ingredientes {
-  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-container__lateral_i_ingredientes_i {
+  height: 85px;
   width: 80px;
-  border-style: dotted;
+  background-image: url(./magdalena.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .header-container__lateral_i_fiestas {
-  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-container__lateral_i_fiestas_i {
+  height: 85px;
   width: 80px;
-  border-style: dotted;
+  background-image: url("./tarta-cumpleanos.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .header-container__lateral_i_marcas {
-  height: 80px;
-  width: 80px;
-  border-style: dotted;
+  display: flex;
+  margin-left: 6px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.header-container__lateral_i_expand {
-  flex-grow: 1;
-  border-style: dotted;
+.header-container__lateral_i_marcas_i {
+  height: 85px;
+  width: 80px;
+  background-image: url("./delantal.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .header-container__lateral_i_blog {
-  height: 80px;
+  display: flex;
+  margin-left: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-container__lateral_i_blog_i {
+  height: 85px;
   width: 80px;
-  border-style: dotted;
+  background-image: url("./menu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header-container__lateral_i_t {
+  font-size: 13px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #2e2925;
+  letter-spacing: 1px;
+  line-height: 20.15px;
+  text-align: center;
+  font-weight: bolder;
+  margin: 0;
 }
 
 @media (min-width: 800px) {
