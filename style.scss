@@ -275,15 +275,72 @@ body {
   &__image-1000 {
     display: none;
   }
-  &__expand {
-    background-color: blue;
-    height: 50px;
-    width: 50px;
-  }
   &__lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     background-color: yellow;
+    height: 200px;
+    width: 445px;
+  }
+  &__lateral_busqueda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: green;
     height: 50px;
-    width: 50px;
+    width: 425px;
+  }
+  &__lateral_bus_boton1 {
+    height: 30px;
+    width: 130px;
+    border-style: dotted;
+  }
+  &__lateral_bus_boton2 {
+    height: 30px;
+    width: 130px;
+    border-style: dotted;
+  }
+  &__lateral_bus_box {
+    height: 30px;
+    width: 175px;
+    border-style: dotted;
+  }
+  &__lateral_iconos {
+    display: flex;
+    background-color: blue;
+    height: 120px;
+    width: 425px;
+  }
+  &__lateral_i_utensilios {
+    height: 80px;
+    width: 80px;
+    border-style: dotted;
+  }
+  &__lateral_i_ingredientes {
+    height: 80px;
+    width: 80px;
+    border-style: dotted;
+  }
+  &__lateral_i_fiestas {
+    height: 80px;
+    width: 80px;
+    border-style: dotted;
+  }
+  &__lateral_i_marcas {
+    height: 80px;
+    width: 80px;
+    border-style: dotted;
+  }
+  &__lateral_i_expand {
+    flex-grow: 1;
+    border-style: dotted;
+  }
+  &__lateral_i_blog {
+    height: 80px;
+    width: 80px;
+    border-style: dotted;
   }
 }
 @media (min-width: 800px) {
@@ -295,11 +352,8 @@ body {
     &__image-1000 {
       display: inline;
     }
-    &__expand {
-      flex-grow: 1;
-    }
     &__lateral {
-      width: 200px;
+      width: 445px;
     }
   }
 }
