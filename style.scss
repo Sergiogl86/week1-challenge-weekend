@@ -64,6 +64,9 @@ body {
     background-position: bottom;
     background-repeat: no-repeat;
     background-color: #ff5959;
+    &:hover {
+      cursor: pointer;
+    }
   }
   &__cu {
     width: 70px;
@@ -73,6 +76,7 @@ body {
     background-repeat: no-repeat;
     background-color: rgb(97, 153, 175);
     &:hover {
+      cursor: pointer;
       height: 140px;
     }
   }
@@ -84,6 +88,7 @@ body {
     background-repeat: no-repeat;
     background-color: rgb(246, 180, 54);
     &:hover {
+      cursor: pointer;
       height: 140px;
     }
   }
@@ -109,14 +114,67 @@ body {
   }
   &__social {
     display: none;
-    width: 215px;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+    height: 50px;
     margin-left: 20px;
     margin-right: 20px;
   }
-  &__social-icon {
-    background: url("./sprite.svg") no-repeat 0 -533px;
-    width: 210px;
-    height: 33px;
+  &__social-facebook {
+    background: url("./sprite.svg") no-repeat -11px -540px;
+    width: 10px;
+    height: 20px;
+    &:hover {
+      cursor: pointer;
+      background: url("./sprite.svg") no-repeat -11px -500px;
+      width: 10px;
+      height: 20px;
+    }
+  }
+  &__social-twitter {
+    background: url("./sprite.svg") no-repeat -44px -543px;
+    width: 17px;
+    height: 15px;
+    &:hover {
+      cursor: pointer;
+      background: url("./sprite.svg") no-repeat -44px -503px;
+      width: 17px;
+      height: 15px;
+    }
+  }
+  &__social-instagram {
+    background: url("./sprite.svg") no-repeat -78px -541px;
+    width: 18px;
+    height: 18px;
+    &:hover {
+      cursor: pointer;
+      background: url("./sprite.svg") no-repeat -78px -501px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+  &__social-pinterest {
+    background: url("./sprite.svg") no-repeat -115px -540px;
+    width: 15px;
+    height: 20px;
+    &:hover {
+      cursor: pointer;
+      background: url("./sprite.svg") no-repeat -115px -500px;
+      width: 15px;
+      height: 20px;
+    }
+  }
+  &__social-youtube {
+    background: url("./sprite.svg") no-repeat -185px -540px;
+    width: 16px;
+    height: 19px;
+    &:hover {
+      cursor: pointer;
+      background: url("./sprite.svg") no-repeat -185px -500px;
+      width: 16px;
+      height: 19px;
+    }
   }
   &__buscar {
     background-color: #bbb8b6;
@@ -130,6 +188,7 @@ body {
   &__carrito {
     background-color: #ffffff;
     &:hover {
+      cursor: pointer;
       background-color: #ff5959;
     }
   }
@@ -144,7 +203,8 @@ body {
     background-color: #ff5959;
   }
   &__Numitems {
-    font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
+    font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial",
+      sans-serif;
     font-style: normal;
     font-size: 20px;
     color: #fff;
@@ -179,16 +239,20 @@ body {
 
 /*/Hovers HEADER/*/
 .header-fix__carrito:hover .header-fix__carrito-icon {
+  cursor: pointer;
   background-position-x: -116px;
 }
 .header-fix__user:hover .header-fix__user-icon {
+  cursor: pointer;
   background-position-x: -37px;
 }
 
 .header-fix__user:hover .header-fix__user-icon {
+  cursor: pointer;
   background-position-x: -37px;
 }
 .header-fix__user:hover .header-fix__u-icon-text {
+  cursor: pointer;
   color: #ff5959;
 }
 
@@ -583,54 +647,66 @@ body {
 /*/ Hover completo iconos /*/
 
 .footer__icons__envios:hover .footer__icons__enviosBox {
+  cursor: pointer;
   background-position-x: 5px;
   background-position-y: -101px;
 }
 
 .footer__icons__envios:hover .footer__icons__text1 {
+  cursor: pointer;
   color: #fd8080;
 }
 
 .footer__icons__envios:hover .footer__icons__text2 {
+  cursor: pointer;
   color: #fd8080;
 }
 
 .footer__icons__envios24:hover .footer__icons__envios24Box {
+  cursor: pointer;
   background-position-x: -87px;
   background-position-y: -101px;
 }
 
 .footer__icons__envios24:hover .footer__icons__text1 {
+  cursor: pointer;
   color: #fd8080;
 }
 
 .footer__icons__envios24:hover .footer__icons__text2 {
+  cursor: pointer;
   color: #fd8080;
 }
 
 .footer__icons__devoluciones:hover .footer__icons__devolucionesBox {
+  cursor: pointer;
   background-position-x: -143px;
   background-position-y: -101px;
 }
 
 .footer__icons__devoluciones:hover .footer__icons__text1 {
+  cursor: pointer;
   color: #fd8080;
 }
 
 .footer__icons__devoluciones:hover .footer__icons__text2 {
+  cursor: pointer;
   color: #fd8080;
 }
 
 .footer__icons__reembolso:hover .footer__icons__reembolsoBox {
+  cursor: pointer;
   background-position-x: -218px;
   background-position-y: -101px;
 }
 
 .footer__icons__reembolso:hover .footer__icons__text1 {
+  cursor: pointer;
   color: #fd8080;
 }
 
 .footer__icons__reembolso:hover .footer__icons__text2 {
+  cursor: pointer;
   color: #fd8080;
 }
 
