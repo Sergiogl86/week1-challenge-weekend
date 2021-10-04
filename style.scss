@@ -276,7 +276,7 @@ body {
     display: none;
   }
   &__lateral {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -296,6 +296,7 @@ body {
     background-image: url("./novedades.png");
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
   }
   &__lateral_bus_boton2 {
     height: 50px;
@@ -303,6 +304,7 @@ body {
     background-image: url("./ofertas.png");
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
   }
   &__lateral_bus_box {
     display: flex;
@@ -318,6 +320,7 @@ body {
     width: 45px;
     height: 25px;
     background-color: #bbb8b6;
+    cursor: pointer;
   }
   &__lateral_bus_box {
     height: 30px;
@@ -333,6 +336,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
   &__lateral_i_utensilios_i {
     height: 85px;
@@ -340,12 +344,14 @@ body {
     background-image: url(./utensiliosML.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgb(242, 242, 242);
   }
   &__lateral_i_ingredientes {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
   &__lateral_i_ingredientes_i {
     height: 85px;
@@ -353,12 +359,14 @@ body {
     background-image: url(./magdalena.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgb(242, 242, 242);
   }
   &__lateral_i_fiestas {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
   &__lateral_i_fiestas_i {
     height: 85px;
@@ -366,6 +374,7 @@ body {
     background-image: url("./tarta-cumpleanos.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgb(242, 242, 242);
   }
   &__lateral_i_marcas {
     display: flex;
@@ -373,6 +382,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
   &__lateral_i_marcas_i {
     height: 85px;
@@ -380,6 +390,7 @@ body {
     background-image: url("./delantal.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgb(242, 242, 242);
   }
 
   &__lateral_i_blog {
@@ -388,6 +399,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
   &__lateral_i_blog_i {
     height: 85px;
@@ -395,6 +407,7 @@ body {
     background-image: url("./menu.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgb(255, 89, 89);
   }
   &__lateral_i_t {
     font-size: 13px;
@@ -407,7 +420,40 @@ body {
     margin: 0;
   }
 }
+
+/*/ Hover header-container__lateral /*/
+
+.header-container__lateral_i_utensilios:hover
+  .header-container__lateral_i_utensilios_i {
+  background-color: rgb(255, 89, 89);
+}
+
+.header-container__lateral_i_ingredientes:hover
+  .header-container__lateral_i_ingredientes_i {
+  background-color: rgb(255, 89, 89);
+}
+
+.header-container__lateral_i_fiestas:hover
+  .header-container__lateral_i_fiestas_i {
+  background-color: rgb(255, 89, 89);
+}
+
+.header-container__lateral_i_marcas:hover
+  .header-container__lateral_i_marcas_i {
+  background-color: rgb(255, 89, 89);
+}
+
+.header-container__lateral_i_blog:hover .header-container__lateral_i_blog_i {
+  background-color: rgb(242, 242, 242);
+}
+
+/////////////////////////////////////////////////
+
 @media (min-width: 800px) {
+  .header-container__lateral {
+    display: flex;
+    margin-right: 30px;
+  }
   .header-container {
     margin-top: 75px;
     &__image-700 {
