@@ -149,7 +149,8 @@ body {
 }
 
 /*/ MEDIA QUERIES HEADER /*/
-@media (min-width: 601px) {
+@media (min-width: 800px) {
+  /*HEADER FIX*/
   .header-fix {
     width: 60%;
   }
@@ -200,18 +201,49 @@ body {
   display: flex;
   padding-top: 50px;
   padding-bottom: 50px;
-  /*padding-bottom: 200px;*/
-  justify-content: flex-start;
+  justify-content: center;
   background-color: white;
   width: 100%;
-  padding-left: 130px;
-  padding-right: 130px;
 }
-
-.header-container img {
+.header-container__sub {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.header-container__image-700 {
   height: 55px;
 }
+.header-container__image-1000 {
+  display: none;
+}
+.header-container__expand {
+  background-color: blue;
+  height: 50px;
+  width: 50px;
+}
+.header-container__lateral {
+  background-color: yellow;
+  height: 50px;
+  width: 50px;
+}
 
+@media (min-width: 800px) {
+  .header-container {
+    margin-top: 75px;
+  }
+  .header-container__image-700 {
+    display: none;
+  }
+  .header-container__image-1000 {
+    display: inline;
+  }
+  .header-container__expand {
+    flex-grow: 1;
+  }
+  .header-container__lateral {
+    width: 200px;
+  }
+}
 .main-container {
   display: flex;
   flex-direction: column;
@@ -310,6 +342,7 @@ body {
   width: 100%;
   /*SIGUENOS-----------------*/
   /*NEWSLETTER*/
+  /*CONTACT*/
 }
 .footer__contact {
   display: flex;
@@ -577,5 +610,12 @@ body {
 }
 
 /*/ Warrada /*/
+@media (min-width: 800px) {
+  .footer__contact {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
