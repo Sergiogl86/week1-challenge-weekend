@@ -496,7 +496,12 @@ body {
 
 .main-container {
   width: 100%;
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;*/
+  align-items: center;
   &__home {
+    width: 100%;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -517,11 +522,17 @@ body {
       background-image: url(/images/fiestaspersonajes.jpg);
       background-size: cover;
     }
-    &:nth-child(3) {
-      background-image: url(/images/pompones.jpg);
-      background-size: cover;
-      overflow: hidden;
-    }
+  }
+  &__images-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(/images/pompones.jpg);
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
   }
   &__box {
     width: 50%;
@@ -549,6 +560,14 @@ body {
       padding: 20px;
       color: white;
     }
+  }
+  &__column {
+    width: 100%;
+    height: auto;
+  }
+  &__row {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -1013,8 +1032,8 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding-left: 250px;
-      padding-right: 250px;
+      padding-left: 150px;
+      padding-right: 150px;
     }
     &__title {
       font-family: "Source Sans Pro Black";
@@ -1036,6 +1055,36 @@ body {
       & li {
         margin: 20px;
       }
+    }
+  }
+  .main-container__home {
+    display: flex;
+    flex-direction: row;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .main-container__column {
+    width: 70%;
+    margin: 5px;
+    & .main-container__images {
+      display: flex;
+      height: 250px;
+      margin: 5px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+  }
+  .main-container__row {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    margin: 10px;
+    & .main-container__images-3 {
+      display: flex;
+      height: 510px;
+      margin-top: 30px;
     }
   }
 }
