@@ -848,8 +848,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 250px;
+    padding-right: 250px;
   }
   .sponsors__title {
     font-family: "Source Sans Pro Black";
@@ -872,6 +872,21 @@ body {
   .sponsors__list li {
     margin: 20px;
   }
+
+  /*
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    flex-grow: 2;
+    width: 80%;
+  }
+  .column-side {
+    display: flex;
+    border: 1px solid black;
+    flex-grow: 1;
+  }
+  */
 }
 
 /*# sourceMappingURL=style.css.map */
