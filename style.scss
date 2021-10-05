@@ -995,6 +995,9 @@ body {
   .footer__email {
     align-items: flex-start;
   }
+}
+
+@media (min-width: 800px) {
   .footer__icons {
     width: 100%;
     justify-content: space-between;
