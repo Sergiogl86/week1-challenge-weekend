@@ -487,7 +487,7 @@ body {
 }
 
 .main-container__titulo {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro Black";
   letter-spacing: 5px;
   font-weight: bold;
   border-top: 2px solid black;
@@ -553,6 +553,7 @@ body {
 
 .sponsors {
   width: 100%;
+  display: none;
   height: 100px;
   background-color: white;
 }
@@ -984,6 +985,8 @@ body {
   .footer__email {
     align-items: flex-start;
   }
+
+
 }
 @media (min-width: 800px) {
   .footer__icons {
@@ -992,6 +995,41 @@ body {
     padding-left: 25%;
     padding-right: 25%;
     height: 200px;
+  }
+
+  .sponsors {
+    display: flex;
+    width: 100%;
+    height: 1000px;
+  }
+  .sponsors__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+  .sponsors__title {
+    font-family: "Source Sans Pro Black";
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-size: 28px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+  }
+  .sponsors__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 40px;
+  }
+  .sponsors__list li {
+    margin: 20px;
   }
 }
 
