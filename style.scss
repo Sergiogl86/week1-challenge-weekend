@@ -422,23 +422,19 @@ body {
 
 /*/ Hover header-container__lateral /*/
 
-.header-container__lateral_i_utensilios:hover
-  .header-container__lateral_i_utensilios_i {
+.header-container__lateral_i_utensilios:hover .header-container__lateral_i_utensilios_i {
   background-color: rgb(255, 89, 89);
 }
 
-.header-container__lateral_i_ingredientes:hover
-  .header-container__lateral_i_ingredientes_i {
+.header-container__lateral_i_ingredientes:hover .header-container__lateral_i_ingredientes_i {
   background-color: rgb(255, 89, 89);
 }
 
-.header-container__lateral_i_fiestas:hover
-  .header-container__lateral_i_fiestas_i {
+.header-container__lateral_i_fiestas:hover .header-container__lateral_i_fiestas_i {
   background-color: rgb(255, 89, 89);
 }
 
-.header-container__lateral_i_marcas:hover
-  .header-container__lateral_i_marcas_i {
+.header-container__lateral_i_marcas:hover .header-container__lateral_i_marcas_i {
   background-color: rgb(255, 89, 89);
 }
 
@@ -1015,8 +1011,8 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding-left: 300px;
-      padding-right: 300px;
+      padding-left: 250px;
+      padding-right: 250px;
     }
     &__title {
       font-family: "Source Sans Pro Black";
