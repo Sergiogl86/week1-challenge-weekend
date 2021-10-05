@@ -593,13 +593,31 @@ body {
   width: 32px;
   height: 33px;
 }
+.footer__iconos-facebook:hover {
+  cursor: pointer;
+  background: url(sprite.svg) no-repeat 0 -573px;
+  width: 32px;
+  height: 33px;
+}
 .footer__iconos-twitter {
   background: url(/sprite.svg) no-repeat -35px -493px;
   width: 33px;
   height: 33px;
 }
+.footer__iconos-twitter:hover {
+  cursor: pointer;
+  background: url(/sprite.svg) no-repeat -35px -573px;
+  width: 33px;
+  height: 33px;
+}
 .footer__iconos-instagram {
   background: url(/sprite.svg) no-repeat -71px -493px;
+  width: 33px;
+  height: 33px;
+}
+.footer__iconos-instagram:hover {
+  cursor: pointer;
+  background: url(/sprite.svg) no-repeat -71px -573px;
   width: 32px;
   height: 33px;
 }
@@ -608,8 +626,20 @@ body {
   width: 33px;
   height: 33px;
 }
+.footer__iconos-pinterest:hover {
+  cursor: pointer;
+  background: url(sprite.svg) no-repeat -106px -573px;
+  width: 33px;
+  height: 33px;
+}
 .footer__iconos-youtube {
   background: url(/sprite.svg) no-repeat -177px -493px;
+  width: 33px;
+  height: 33px;
+}
+.footer__iconos-youtube:hover {
+  cursor: pointer;
+  background: url(/sprite.svg) no-repeat -177px -573px;
   width: 33px;
   height: 33px;
 }
@@ -650,6 +680,7 @@ body {
   border-radius: 5px;
   border: 2px solid #555;
   margin-right: 10px;
+  margin-top: 4px;
 }
 .footer__check a {
   color: #67625f;
@@ -685,6 +716,10 @@ body {
 }
 .footer__contact-box h3 {
   margin-top: 0px;
+}
+.footer__contact-box h3:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 .footer__icon-contact {
   width: 40px;
@@ -866,9 +901,13 @@ body {
 
 /*/ Warrada /*/
 @media (min-width: 800px) {
+  .footer__container {
+    width: 100%;
+  }
   .footer__contact {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: flex-start;
     padding-bottom: 80px;
     width: 65%;
@@ -909,7 +948,7 @@ body {
   .footer__button-box {
     padding-top: 11px;
     margin: 0;
-    min-width: 105px;
+    min-width: 115px;
   }
   .footer__button-box button {
     background: #ff5959;
@@ -936,10 +975,23 @@ body {
   .footer__icons-box {
     justify-content: flex-start;
   }
+  .footer__contact-box h3 {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 14px;
+  }
 
   .footer__email {
     align-items: flex-start;
-    background-color: white;
+  }
+}
+@media (min-width: 800px) {
+  .footer__icons {
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 25%;
+    padding-right: 25%;
+    height: 200px;
   }
 }
 
